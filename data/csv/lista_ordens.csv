@@ -1,0 +1,217 @@
+﻿ID_Ordem;Tipo_Ordem;Codigo_Item;Descricao_Item;Quantidade;Unidade;Semana_Liberacao;Semana_Entrega;Status;Atrasada
+2323;OC;MP-411;Motor Elétrico Central Brushless 250W 36V;29,00;UN;-3;1;ENCERRADA;SIM
+2328;OC;MP-412;Bateria Íons de Lítio 36V 14Ah com Chave;20,00;UN;-3;1;FIRME;SIM
+2210;OC;MP-111;Kit Transmissão MTB 1x12V Completo;50,00;KIT;-2;1;LIBERADA;SIM
+2245;OC;MP-117;Suspensão Dianteira a Ar 100mm com Trava;50,00;UN;-2;1;FIRME;SIM
+2309;OC;MP-311;Kit Transmissão Speed 2x11V Câmbios Integrados;25,00;KIT;-2;1;ENCERRADA;SIM
+2314;OC;MP-317;Garfo Fibra de Carbono Rígido Speed Road;25,00;UN;-2;1;FIRME;SIM
+2333;OC;MP-413;Display LCD Computador de Bordo e Sensor PAS;30,00;KIT;-2;1;LIBERADA;SIM
+2077;OP;PA-004;Bicicleta Elétrica E-Bike Trekking 250W Pedal Forte;10,00;UN;-1;1;FIRME;SIM
+2141;OP;SA-040;Quadro E-Bike com Berço Integrado de Bateria;28,00;UN;-1;1;LIBERADA;SIM
+2153;OC;MP-101;Tubos Alumínio 6061 Hidroformados MTB;120,00;KG;-1;1;FIRME;SIM
+2163;OC;MP-103;Aro MTB 29 Parede Dupla Alumínio;138,00;UN;-1;1;LIBERADA;SIM
+2175;OC;MP-105;Par de Cubos Alumínio Rolamentados;112,00;PAR;-1;1;FIRME;SIM
+2181;OC;MP-106;Pneu MTB 29 x 2.20 Kevlar Tubeless;128,00;UN;-1;1;ENCERRADA;SIM
+2204;OC;MP-110;Conjunto Manetes Freio a Disco Hidráulico;161,00;PAR;-1;1;FIRME;SIM
+2217;OC;MP-112;Kit Freio a Disco Hidráulico Pinças e Rotores;94,00;KIT;-1;1;LIBERADA;SIM
+2252;OC;MP-201;Tubos Alumínio Liga Leve para Urbano;90,00;KG;-1;1;FIRME;SIM
+2258;OC;MP-203;Aro Urbano 700c Perfil Duplo Alumínio;70,00;UN;-1;1;ENCERRADA;SIM
+2263;OC;MP-206;Pneu Urbano 700x38c com Faixa Refletiva;70,00;UN;-1;1;FIRME;SIM
+2280;OC;MP-211;Kit Transmissão Urbano 7V Shimano Tourney;35,00;KIT;-1;1;LIBERADA;SIM
+2285;OC;MP-217;Garfo Rígido Urbano Aço Liga Leve;40,00;UN;-1;1;FIRME;SIM
+2289;OC;MP-301;Tubos Alumínio 7005 Perfil Aero Speed;70,00;KG;-1;1;ENCERRADA;SIM
+2293;OC;MP-303;Aro Speed 700c Perfil Alto 38mm Aero;50,00;UN;-1;1;FIRME;SIM
+2298;OC;MP-305;Par de Cubos Speed Rolamentos Alta Rotação;35,00;PAR;-1;1;LIBERADA;SIM
+2302;OC;MP-306;Pneu Speed 700x25c Kevlar Alta Pressão;70,00;UN;-1;1;FIRME;SIM
+2319;OC;MP-401;Tubos Reforçados e Placa Berço Bateria E-Bike;150,60;KG;-1;1;ENCERRADA;SIM
+2053;OP;PA-001;Bicicleta Mountain Bike Aro 29 Pedal Forte;20,00;UN;0;1;FIRME;SIM
+2061;OP;PA-002;Bicicleta Urbana Passeio Conforto Pedal Forte;15,00;UN;0;1;LIBERADA;SIM
+2069;OP;PA-003;Bicicleta Speed Road 700c Endurance Pedal Forte;12,00;UN;0;1;FIRME;SIM
+2085;OP;SA-010;Quadro MTB Aro 29 Alumínio Soldado;30,00;UN;0;1;LIBERADA;SIM
+2092;OP;SA-011;Par de Rodas MTB 29 Montadas com Pneu;60,00;JG;0;1;FIRME;SIM
+2099;OP;SA-012;Cockpit MTB Completo Montado (Guidão e Mesa);87,00;UN;0;1;LIBERADA;SIM
+2106;OP;SA-020;Quadro Urbano Alumínio Rebaixado Soldado;25,00;UN;0;1;FIRME;SIM
+2113;OP;SA-021;Par de Rodas Urbanas 700c com Faixa Refletiva;23,00;JG;0;1;LIBERADA;SIM
+2120;OP;SA-022;Cockpit Urbano Conforto Regulável Montado;25,00;UN;0;1;FIRME;SIM
+2127;OP;SA-030;Quadro Speed Road 700c Alumínio Aero Soldado;20,00;UN;0;1;LIBERADA;SIM
+2134;OP;SA-031;Par de Rodas Speed 700c Perfil Alto Montadas;20,00;JG;0;1;FIRME;SIM
+2147;OP;SA-041;Módulo de Tração E-Bike (Motor Central e Chicote);26,00;UN;0;1;ENCERRADA;SIM
+2157;OC;MP-102;Varetas Solda TIG e Gás Argônio;144,00;UN;0;1;FIRME;SIM
+2169;OC;MP-104;Jogo de Raios Inox 2.0mm com Niples;289,00;JG;0;1;LIBERADA;SIM
+2186;OC;MP-107;Câmara de Ar Aro 29 Bico Fino Presta;188,00;UN;0;1;FIRME;SIM
+2192;OC;MP-108;Guidão Reto Alumínio MTB 720mm;108,00;UN;0;1;ENCERRADA;SIM
+2198;OC;MP-109;Mesa de Avanço Alumínio 31.8 x 80mm;108,00;UN;0;1;FIRME;SIM
+2224;OC;MP-113;Selim Ergonômico Gel Antiprostático;99,00;UN;0;1;LIBERADA;SIM
+2231;OC;MP-114;Canote Selim Alumínio com Abraçadeira;99,00;UN;0;1;FIRME;SIM
+2238;OC;MP-115;Par de Pedais Plataforma Alumínio CNC;99,00;PAR;0;1;ENCERRADA;SIM
+2268;OC;MP-207;Câmara de Ar 700c Válvula Americana;90,00;UN;0;1;FIRME;SIM
+2272;OC;MP-208;Guidão Urbano Ergonômico Curvo Conforto;40,00;UN;0;1;LIBERADA;SIM
+2276;OC;MP-209;Mesa de Avanço Regulável em Altura;40,00;UN;0;1;FIRME;SIM
+2324;OC;MP-411;Motor Elétrico Central Brushless 250W 36V;20,00;UN;-2;2;ENCERRADA;SIM
+2329;OC;MP-412;Bateria Íons de Lítio 36V 14Ah com Chave;20,00;UN;-2;2;FIRME;SIM
+2211;OC;MP-111;Kit Transmissão MTB 1x12V Completo;39,00;KIT;-1;2;LIBERADA;SIM
+2246;OC;MP-117;Suspensão Dianteira a Ar 100mm com Trava;39,00;UN;-1;2;FIRME;SIM
+2334;OC;MP-413;Display LCD Computador de Bordo e Sensor PAS;30,00;KIT;-1;2;ENCERRADA;SIM
+2078;OP;PA-004;Bicicleta Elétrica E-Bike Trekking 250W Pedal Forte;10,00;UN;0;2;FIRME;SIM
+2142;OP;SA-040;Quadro E-Bike com Berço Integrado de Bateria;15,00;UN;0;2;ENCERRADA;SIM
+2154;OC;MP-101;Tubos Alumínio 6061 Hidroformados MTB;120,00;KG;0;2;FIRME;SIM
+2164;OC;MP-103;Aro MTB 29 Parede Dupla Alumínio;100,00;UN;0;2;ENCERRADA;SIM
+2176;OC;MP-105;Par de Cubos Alumínio Rolamentados;61,00;PAR;0;2;FIRME;SIM
+2182;OC;MP-106;Pneu MTB 29 x 2.20 Kevlar Tubeless;120,00;UN;0;2;LIBERADA;SIM
+2205;OC;MP-110;Conjunto Manetes Freio a Disco Hidráulico;81,00;PAR;0;2;FIRME;SIM
+2218;OC;MP-112;Kit Freio a Disco Hidráulico Pinças e Rotores;70,00;KIT;0;2;ENCERRADA;SIM
+2253;OC;MP-201;Tubos Alumínio Liga Leve para Urbano;90,00;KG;0;2;FIRME;SIM
+2259;OC;MP-203;Aro Urbano 700c Perfil Duplo Alumínio;70,00;UN;0;2;LIBERADA;SIM
+2264;OC;MP-206;Pneu Urbano 700x38c com Faixa Refletiva;70,00;UN;0;2;FIRME;SIM
+2290;OC;MP-301;Tubos Alumínio 7005 Perfil Aero Speed;70,00;KG;0;2;ENCERRADA;SIM
+2294;OC;MP-303;Aro Speed 700c Perfil Alto 38mm Aero;50,00;UN;0;2;FIRME;SIM
+2320;OC;MP-401;Tubos Reforçados e Placa Berço Bateria E-Bike;60,00;KG;0;2;LIBERADA;SIM
+2054;OP;PA-001;Bicicleta Mountain Bike Aro 29 Pedal Forte;20,00;UN;1;2;FIRME;NAO
+2062;OP;PA-002;Bicicleta Urbana Passeio Conforto Pedal Forte;15,00;UN;1;2;LIBERADA;NAO
+2070;OP;PA-003;Bicicleta Speed Road 700c Endurance Pedal Forte;12,00;UN;1;2;FIRME;NAO
+2086;OP;SA-010;Quadro MTB Aro 29 Alumínio Soldado;26,00;UN;1;2;LIBERADA;NAO
+2093;OP;SA-011;Par de Rodas MTB 29 Montadas com Pneu;39,00;JG;1;2;FIRME;NAO
+2100;OP;SA-012;Cockpit MTB Completo Montado (Guidão e Mesa);51,00;UN;1;2;ENCERRADA;NAO
+2107;OP;SA-020;Quadro Urbano Alumínio Rebaixado Soldado;20,00;UN;1;2;FIRME;NAO
+2114;OP;SA-021;Par de Rodas Urbanas 700c com Faixa Refletiva;20,00;JG;1;2;LIBERADA;NAO
+2121;OP;SA-022;Cockpit Urbano Conforto Regulável Montado;20,00;UN;1;2;FIRME;NAO
+2128;OP;SA-030;Quadro Speed Road 700c Alumínio Aero Soldado;15,00;UN;1;2;LIBERADA;NAO
+2135;OP;SA-031;Par de Rodas Speed 700c Perfil Alto Montadas;15,00;JG;1;2;FIRME;NAO
+2148;OP;SA-041;Módulo de Tração E-Bike (Motor Central e Chicote);15,00;UN;1;2;ENCERRADA;NAO
+2158;OC;MP-102;Varetas Solda TIG e Gás Argônio;81,00;UN;1;2;FIRME;NAO
+2170;OC;MP-104;Jogo de Raios Inox 2.0mm com Niples;156,00;JG;1;2;ENCERRADA;NAO
+2187;OC;MP-107;Câmara de Ar Aro 29 Bico Fino Presta;120,00;UN;1;2;FIRME;NAO
+2193;OC;MP-108;Guidão Reto Alumínio MTB 720mm;57,00;UN;1;2;LIBERADA;NAO
+2199;OC;MP-109;Mesa de Avanço Alumínio 31.8 x 80mm;57,00;UN;1;2;FIRME;NAO
+2225;OC;MP-113;Selim Ergonômico Gel Antiprostático;70,00;UN;1;2;ENCERRADA;NAO
+2232;OC;MP-114;Canote Selim Alumínio com Abraçadeira;70,00;UN;1;2;FIRME;NAO
+2239;OC;MP-115;Par de Pedais Plataforma Alumínio CNC;70,00;PAR;1;2;LIBERADA;NAO
+2273;OC;MP-208;Guidão Urbano Ergonômico Curvo Conforto;40,00;UN;1;2;FIRME;NAO
+2277;OC;MP-209;Mesa de Avanço Regulável em Altura;40,00;UN;1;2;ENCERRADA;NAO
+2306;OC;MP-309;Fita de Guidão Speed Confort Gel Antiderrapante;50,00;PAR;1;2;FIRME;NAO
+2325;OC;MP-411;Motor Elétrico Central Brushless 250W 36V;20,00;UN;-1;3;LIBERADA;SIM
+2330;OC;MP-412;Bateria Íons de Lítio 36V 14Ah com Chave;20,00;UN;-1;3;FIRME;SIM
+2212;OC;MP-111;Kit Transmissão MTB 1x12V Completo;37,00;KIT;0;3;ENCERRADA;SIM
+2247;OC;MP-117;Suspensão Dianteira a Ar 100mm com Trava;37,00;UN;0;3;FIRME;SIM
+2310;OC;MP-311;Kit Transmissão Speed 2x11V Câmbios Integrados;25,00;KIT;0;3;LIBERADA;SIM
+2315;OC;MP-317;Garfo Fibra de Carbono Rígido Speed Road;25,00;UN;0;3;FIRME;SIM
+2079;OP;PA-004;Bicicleta Elétrica E-Bike Trekking 250W Pedal Forte;10,00;UN;1;3;ENCERRADA;NAO
+2143;OP;SA-040;Quadro E-Bike com Berço Integrado de Bateria;15,00;UN;1;3;FIRME;NAO
+2165;OC;MP-103;Aro MTB 29 Parede Dupla Alumínio;100,00;UN;1;3;LIBERADA;NAO
+2177;OC;MP-105;Par de Cubos Alumínio Rolamentados;78,00;PAR;1;3;FIRME;NAO
+2183;OC;MP-106;Pneu MTB 29 x 2.20 Kevlar Tubeless;120,00;UN;1;3;ENCERRADA;NAO
+2206;OC;MP-110;Conjunto Manetes Freio a Disco Hidráulico;93,00;PAR;1;3;FIRME;NAO
+2219;OC;MP-112;Kit Freio a Disco Hidráulico Pinças e Rotores;82,00;KIT;1;3;LIBERADA;NAO
+2254;OC;MP-201;Tubos Alumínio Liga Leve para Urbano;90,00;KG;1;3;FIRME;NAO
+2281;OC;MP-211;Kit Transmissão Urbano 7V Shimano Tourney;35,00;KIT;1;3;ENCERRADA;NAO
+2286;OC;MP-217;Garfo Rígido Urbano Aço Liga Leve;40,00;UN;1;3;FIRME;NAO
+2295;OC;MP-303;Aro Speed 700c Perfil Alto 38mm Aero;50,00;UN;1;3;LIBERADA;NAO
+2299;OC;MP-305;Par de Cubos Speed Rolamentos Alta Rotação;35,00;PAR;1;3;FIRME;NAO
+2303;OC;MP-306;Pneu Speed 700x25c Kevlar Alta Pressão;70,00;UN;1;3;ENCERRADA;NAO
+2321;OC;MP-401;Tubos Reforçados e Placa Berço Bateria E-Bike;60,00;KG;1;3;FIRME;NAO
+2055;OP;PA-001;Bicicleta Mountain Bike Aro 29 Pedal Forte;26,00;UN;2;3;LIBERADA;NAO
+2063;OP;PA-002;Bicicleta Urbana Passeio Conforto Pedal Forte;19,00;UN;2;3;FIRME;NAO
+2071;OP;PA-003;Bicicleta Speed Road 700c Endurance Pedal Forte;12,00;UN;2;3;LIBERADA;NAO
+2087;OP;SA-010;Quadro MTB Aro 29 Alumínio Soldado;25,00;UN;2;3;FIRME;NAO
+2094;OP;SA-011;Par de Rodas MTB 29 Montadas com Pneu;37,00;JG;2;3;ENCERRADA;NAO
+2101;OP;SA-012;Cockpit MTB Completo Montado (Guidão e Mesa);57,00;UN;2;3;FIRME;NAO
+2108;OP;SA-020;Quadro Urbano Alumínio Rebaixado Soldado;24,00;UN;2;3;LIBERADA;NAO
+2115;OP;SA-021;Par de Rodas Urbanas 700c com Faixa Refletiva;24,00;JG;2;3;FIRME;NAO
+2122;OP;SA-022;Cockpit Urbano Conforto Regulável Montado;24,00;UN;2;3;LIBERADA;NAO
+2129;OP;SA-030;Quadro Speed Road 700c Alumínio Aero Soldado;17,00;UN;2;3;FIRME;NAO
+2136;OP;SA-031;Par de Rodas Speed 700c Perfil Alto Montadas;17,00;JG;2;3;ENCERRADA;NAO
+2149;OP;SA-041;Módulo de Tração E-Bike (Motor Central e Chicote);15,00;UN;2;3;FIRME;NAO
+2159;OC;MP-102;Varetas Solda TIG e Gás Argônio;90,00;UN;2;3;LIBERADA;NAO
+2171;OC;MP-104;Jogo de Raios Inox 2.0mm com Niples;186,00;JG;2;3;FIRME;NAO
+2188;OC;MP-107;Câmara de Ar Aro 29 Bico Fino Presta;124,00;UN;2;3;ENCERRADA;NAO
+2194;OC;MP-108;Guidão Reto Alumínio MTB 720mm;68,00;UN;2;3;FIRME;NAO
+2200;OC;MP-109;Mesa de Avanço Alumínio 31.8 x 80mm;68,00;UN;2;3;LIBERADA;NAO
+2226;OC;MP-113;Selim Ergonômico Gel Antiprostático;82,00;UN;2;3;FIRME;NAO
+2233;OC;MP-114;Canote Selim Alumínio com Abraçadeira;82,00;UN;2;3;ENCERRADA;NAO
+2240;OC;MP-115;Par de Pedais Plataforma Alumínio CNC;82,00;PAR;2;3;FIRME;NAO
+2269;OC;MP-207;Câmara de Ar 700c Válvula Americana;90,00;UN;2;3;LIBERADA;NAO
+2326;OC;MP-411;Motor Elétrico Central Brushless 250W 36V;20,00;UN;0;4;FIRME;SIM
+2331;OC;MP-412;Bateria Íons de Lítio 36V 14Ah com Chave;20,00;UN;0;4;ENCERRADA;SIM
+2213;OC;MP-111;Kit Transmissão MTB 1x12V Completo;53,00;KIT;1;4;FIRME;NAO
+2248;OC;MP-117;Suspensão Dianteira a Ar 100mm com Trava;53,00;UN;1;4;LIBERADA;NAO
+2311;OC;MP-311;Kit Transmissão Speed 2x11V Câmbios Integrados;25,00;KIT;1;4;FIRME;NAO
+2316;OC;MP-317;Garfo Fibra de Carbono Rígido Speed Road;25,00;UN;1;4;ENCERRADA;NAO
+2335;OC;MP-413;Display LCD Computador de Bordo e Sensor PAS;30,00;KIT;1;4;FIRME;NAO
+2080;OP;PA-004;Bicicleta Elétrica E-Bike Trekking 250W Pedal Forte;13,00;UN;2;4;ENCERRADA;NAO
+2144;OP;SA-040;Quadro E-Bike com Berço Integrado de Bateria;15,00;UN;2;4;FIRME;NAO
+2155;OC;MP-101;Tubos Alumínio 6061 Hidroformados MTB;120,00;KG;2;4;ENCERRADA;NAO
+2166;OC;MP-103;Aro MTB 29 Parede Dupla Alumínio;100,00;UN;2;4;FIRME;NAO
+2178;OC;MP-105;Par de Cubos Alumínio Rolamentados;75,00;PAR;2;4;LIBERADA;NAO
+2184;OC;MP-106;Pneu MTB 29 x 2.20 Kevlar Tubeless;120,00;UN;2;4;FIRME;NAO
+2207;OC;MP-110;Conjunto Manetes Freio a Disco Hidráulico;95,00;PAR;2;4;ENCERRADA;NAO
+2220;OC;MP-112;Kit Freio a Disco Hidráulico Pinças e Rotores;93,00;KIT;2;4;FIRME;NAO
+2255;OC;MP-201;Tubos Alumínio Liga Leve para Urbano;90,00;KG;2;4;LIBERADA;NAO
+2260;OC;MP-203;Aro Urbano 700c Perfil Duplo Alumínio;70,00;UN;2;4;FIRME;NAO
+2265;OC;MP-206;Pneu Urbano 700x38c com Faixa Refletiva;70,00;UN;2;4;ENCERRADA;NAO
+2282;OC;MP-211;Kit Transmissão Urbano 7V Shimano Tourney;35,00;KIT;2;4;FIRME;NAO
+2291;OC;MP-301;Tubos Alumínio 7005 Perfil Aero Speed;70,00;KG;2;4;LIBERADA;NAO
+2322;OC;MP-401;Tubos Reforçados e Placa Berço Bateria E-Bike;60,00;KG;2;4;FIRME;NAO
+4106;OP;PA-001;Bicicleta Mountain Bike Aro 29 Pedal Forte;21,00;UN;3;4;PLANEJADA;NAO
+4111;OP;PA-002;Bicicleta Urbana Passeio Conforto Pedal Forte;23,00;UN;3;4;PLANEJADA;NAO
+4116;OP;PA-003;Bicicleta Speed Road 700c Endurance Pedal Forte;20,00;UN;3;4;PLANEJADA;NAO
+2327;OC;MP-411;Motor Elétrico Central Brushless 250W 36V;20,00;UN;1;5;FIRME;NAO
+2214;OC;MP-111;Kit Transmissão MTB 1x12V Completo;45,00;KIT;2;5;ENCERRADA;NAO
+2249;OC;MP-117;Suspensão Dianteira a Ar 100mm com Trava;45,00;UN;2;5;FIRME;NAO
+2312;OC;MP-311;Kit Transmissão Speed 2x11V Câmbios Integrados;25,00;KIT;2;5;LIBERADA;NAO
+4121;OP;PA-004;Bicicleta Elétrica E-Bike Trekking 250W Pedal Forte;12,00;UN;3;5;PLANEJADA;NAO
+4107;OP;PA-001;Bicicleta Mountain Bike Aro 29 Pedal Forte;35,00;UN;4;5;PLANEJADA;NAO
+4112;OP;PA-002;Bicicleta Urbana Passeio Conforto Pedal Forte;25,00;UN;4;5;PLANEJADA;NAO
+4117;OP;PA-003;Bicicleta Speed Road 700c Endurance Pedal Forte;15,00;UN;4;5;PLANEJADA;NAO
+4127;OP;SA-011;Par de Rodas MTB 29 Montadas com Pneu;25,00;JG;4;5;PLANEJADA;NAO
+4130;OP;SA-012;Cockpit MTB Completo Montado (Guidão e Mesa);20,00;UN;4;5;PLANEJADA;NAO
+4133;OP;SA-020;Quadro Urbano Alumínio Rebaixado Soldado;20,00;UN;4;5;PLANEJADA;NAO
+4136;OP;SA-021;Par de Rodas Urbanas 700c com Faixa Refletiva;20,00;JG;4;5;PLANEJADA;NAO
+4139;OP;SA-022;Cockpit Urbano Conforto Regulável Montado;20,00;UN;4;5;PLANEJADA;NAO
+4147;OP;SA-041;Módulo de Tração E-Bike (Motor Central e Chicote);15,00;UN;4;5;PLANEJADA;NAO
+4151;OC;MP-113;Selim Ergonômico Gel Antiprostático;50,00;UN;4;5;PLANEJADA;NAO
+4154;OC;MP-114;Canote Selim Alumínio com Abraçadeira;50,00;UN;4;5;PLANEJADA;NAO
+4157;OC;MP-115;Par de Pedais Plataforma Alumínio CNC;50,00;PAR;4;5;PLANEJADA;NAO
+2332;OC;MP-412;Bateria Íons de Lítio 36V 14Ah com Chave;20,00;UN;2;6;LIBERADA;NAO
+4122;OP;PA-004;Bicicleta Elétrica E-Bike Trekking 250W Pedal Forte;18,00;UN;4;6;PLANEJADA;NAO
+4146;OP;SA-040;Quadro E-Bike com Berço Integrado de Bateria;15,00;UN;4;6;PLANEJADA;NAO
+4149;OC;MP-112;Kit Freio a Disco Hidráulico Pinças e Rotores;50,00;KIT;4;6;PLANEJADA;NAO
+4108;OP;PA-001;Bicicleta Mountain Bike Aro 29 Pedal Forte;30,00;UN;5;6;PLANEJADA;NAO
+4113;OP;PA-002;Bicicleta Urbana Passeio Conforto Pedal Forte;30,00;UN;5;6;PLANEJADA;NAO
+4118;OP;PA-003;Bicicleta Speed Road 700c Endurance Pedal Forte;20,00;UN;5;6;PLANEJADA;NAO
+4125;OP;SA-010;Quadro MTB Aro 29 Alumínio Soldado;25,00;UN;5;6;PLANEJADA;NAO
+4128;OP;SA-011;Par de Rodas MTB 29 Montadas com Pneu;43,00;JG;5;6;PLANEJADA;NAO
+4131;OP;SA-012;Cockpit MTB Completo Montado (Guidão e Mesa);72,00;UN;5;6;PLANEJADA;NAO
+4134;OP;SA-020;Quadro Urbano Alumínio Rebaixado Soldado;20,00;UN;5;6;PLANEJADA;NAO
+4137;OP;SA-021;Par de Rodas Urbanas 700c com Faixa Refletiva;20,00;JG;5;6;PLANEJADA;NAO
+4140;OP;SA-022;Cockpit Urbano Conforto Regulável Montado;20,00;UN;5;6;PLANEJADA;NAO
+4142;OP;SA-030;Quadro Speed Road 700c Alumínio Aero Soldado;24,00;UN;5;6;PLANEJADA;NAO
+4144;OP;SA-031;Par de Rodas Speed 700c Perfil Alto Montadas;24,00;JG;5;6;PLANEJADA;NAO
+4148;OP;SA-041;Módulo de Tração E-Bike (Motor Central e Chicote);15,00;UN;5;6;PLANEJADA;NAO
+4152;OC;MP-113;Selim Ergonômico Gel Antiprostático;71,00;UN;5;6;PLANEJADA;NAO
+4155;OC;MP-114;Canote Selim Alumínio com Abraçadeira;71,00;UN;5;6;PLANEJADA;NAO
+4158;OC;MP-115;Par de Pedais Plataforma Alumínio CNC;71,00;PAR;5;6;PLANEJADA;NAO
+4160;OC;MP-117;Suspensão Dianteira a Ar 100mm com Trava;30,00;UN;4;7;PLANEJADA;NAO
+4164;OC;MP-317;Garfo Fibra de Carbono Rígido Speed Road;25,00;UN;4;7;PLANEJADA;NAO
+4123;OP;PA-004;Bicicleta Elétrica E-Bike Trekking 250W Pedal Forte;15,00;UN;5;7;PLANEJADA;NAO
+4150;OC;MP-112;Kit Freio a Disco Hidráulico Pinças e Rotores;63,00;KIT;5;7;PLANEJADA;NAO
+4161;OC;MP-211;Kit Transmissão Urbano 7V Shimano Tourney;35,00;KIT;5;7;PLANEJADA;NAO
+4162;OC;MP-217;Garfo Rígido Urbano Aço Liga Leve;40,00;UN;5;7;PLANEJADA;NAO
+4109;OP;PA-001;Bicicleta Mountain Bike Aro 29 Pedal Forte;40,00;UN;6;7;PLANEJADA;NAO
+4114;OP;PA-002;Bicicleta Urbana Passeio Conforto Pedal Forte;25,00;UN;6;7;PLANEJADA;NAO
+4119;OP;PA-003;Bicicleta Speed Road 700c Endurance Pedal Forte;25,00;UN;6;7;PLANEJADA;NAO
+4126;OP;SA-010;Quadro MTB Aro 29 Alumínio Soldado;30,00;UN;6;7;PLANEJADA;NAO
+4129;OP;SA-011;Par de Rodas MTB 29 Montadas com Pneu;35,00;JG;6;7;PLANEJADA;NAO
+4132;OP;SA-012;Cockpit MTB Completo Montado (Guidão e Mesa);55,00;UN;6;7;PLANEJADA;NAO
+4135;OP;SA-020;Quadro Urbano Alumínio Rebaixado Soldado;20,00;UN;6;7;PLANEJADA;NAO
+4138;OP;SA-021;Par de Rodas Urbanas 700c com Faixa Refletiva;20,00;JG;6;7;PLANEJADA;NAO
+4141;OP;SA-022;Cockpit Urbano Conforto Regulável Montado;20,00;UN;6;7;PLANEJADA;NAO
+4143;OP;SA-030;Quadro Speed Road 700c Alumínio Aero Soldado;20,00;UN;6;7;PLANEJADA;NAO
+4145;OP;SA-031;Par de Rodas Speed 700c Perfil Alto Montadas;20,00;JG;6;7;PLANEJADA;NAO
+4153;OC;MP-113;Selim Ergonômico Gel Antiprostático;85,00;UN;6;7;PLANEJADA;NAO
+4156;OC;MP-114;Canote Selim Alumínio com Abraçadeira;85,00;UN;6;7;PLANEJADA;NAO
+4159;OC;MP-115;Par de Pedais Plataforma Alumínio CNC;85,00;PAR;6;7;PLANEJADA;NAO
+4163;OC;MP-309;Fita de Guidão Speed Confort Gel Antiderrapante;50,00;PAR;6;7;PLANEJADA;NAO
+4124;OP;PA-004;Bicicleta Elétrica E-Bike Trekking 250W Pedal Forte;20,00;UN;6;8;PLANEJADA;NAO
+4110;OP;PA-001;Bicicleta Mountain Bike Aro 29 Pedal Forte;35,00;UN;7;8;PLANEJADA;NAO
+4115;OP;PA-002;Bicicleta Urbana Passeio Conforto Pedal Forte;30,00;UN;7;8;PLANEJADA;NAO
+4120;OP;PA-003;Bicicleta Speed Road 700c Endurance Pedal Forte;20,00;UN;7;8;PLANEJADA;NAO

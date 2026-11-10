@@ -1,0 +1,50 @@
+﻿Codigo;Descricao;Tipo;Unidade;Custo_Unitario_R$;Estoque_Seguranca;Lote_Minimo;Saldo_Atual;Situacao_Estoque;Valor_Total_R$
+MP-101;Tubos Alumínio 6061 Hidroformados MTB;MP;KG;45,00;60,00;120,00;460,00;ADEQUADO;20700,00
+MP-102;Varetas Solda TIG e Gás Argônio;MP;UN;15,00;30,00;60,00;165,00;ADEQUADO;2475,00
+MP-103;Aro MTB 29 Parede Dupla Alumínio;MP;UN;65,00;50,00;100,00;286,00;ADEQUADO;18590,00
+MP-104;Jogo de Raios Inox 2.0mm com Niples;MP;JG;28,00;50,00;100,00;163,00;ADEQUADO;4564,00
+MP-105;Par de Cubos Alumínio Rolamentados;MP;PAR;110,00;30,00;50,00;23,00;ABAIXO DO SEGURANÇA;2530,00
+MP-106;Pneu MTB 29 x 2.20 Kevlar Tubeless;MP;UN;85,00;60,00;120,00;424,00;ADEQUADO;36040,00
+MP-107;Câmara de Ar Aro 29 Bico Fino Presta;MP;UN;18,50;60,00;120,00;156,00;ADEQUADO;2886,00
+MP-108;Guidão Reto Alumínio MTB 720mm;MP;UN;42,00;25,00;50,00;112,00;ADEQUADO;4704,00
+MP-109;Mesa de Avanço Alumínio 31.8 x 80mm;MP;UN;35,00;25,00;50,00;4,00;ABAIXO DO SEGURANÇA;140,00
+MP-110;Conjunto Manetes Freio a Disco Hidráulico;MP;PAR;95,00;30,00;50,00;96,00;ADEQUADO;9120,00
+MP-111;Kit Transmissão MTB 1x12V Completo;MP;KIT;420,00;20,00;35,00;149,00;ADEQUADO;62580,00
+MP-112;Kit Freio a Disco Hidráulico Pinças e Rotores;MP;KIT;160,00;25,00;50,00;102,00;ADEQUADO;16320,00
+MP-113;Selim Ergonômico Gel Antiprostático;MP;UN;55,00;30,00;50,00;102,00;ADEQUADO;5610,00
+MP-114;Canote Selim Alumínio com Abraçadeira;MP;UN;30,00;30,00;50,00;114,00;ADEQUADO;3420,00
+MP-115;Par de Pedais Plataforma Alumínio CNC;MP;PAR;48,00;30,00;50,00;131,00;ADEQUADO;6288,00
+MP-117;Suspensão Dianteira a Ar 100mm com Trava;MP;UN;380,00;15,00;30,00;12,00;ABAIXO DO SEGURANÇA;4560,00
+MP-201;Tubos Alumínio Liga Leve para Urbano;MP;KG;38,00;45,00;90,00;95,00;ADEQUADO;3610,00
+MP-203;Aro Urbano 700c Perfil Duplo Alumínio;MP;UN;52,00;35,00;70,00;150,00;ADEQUADO;7800,00
+MP-206;Pneu Urbano 700x38c com Faixa Refletiva;MP;UN;58,00;35,00;70,00;150,00;ADEQUADO;8700,00
+MP-207;Câmara de Ar 700c Válvula Americana;MP;UN;16,00;45,00;90,00;95,00;ADEQUADO;1520,00
+MP-208;Guidão Urbano Ergonômico Curvo Conforto;MP;UN;38,00;20,00;40,00;45,00;ADEQUADO;1710,00
+MP-209;Mesa de Avanço Regulável em Altura;MP;UN;45,00;20,00;40,00;85,00;ADEQUADO;3825,00
+MP-211;Kit Transmissão Urbano 7V Shimano Tourney;MP;KIT;170,00;20,00;35,00;73,00;ADEQUADO;12410,00
+MP-217;Garfo Rígido Urbano Aço Liga Leve;MP;UN;65,00;20,00;40,00;45,00;ADEQUADO;2925,00
+MP-301;Tubos Alumínio 7005 Perfil Aero Speed;MP;KG;55,00;35,00;70,00;315,00;ADEQUADO;17325,00
+MP-303;Aro Speed 700c Perfil Alto 38mm Aero;MP;UN;95,00;25,00;50,00;21,00;ABAIXO DO SEGURANÇA;1995,00
+MP-305;Par de Cubos Speed Rolamentos Alta Rotação;MP;PAR;160,00;20,00;35,00;23,00;ADEQUADO;3680,00
+MP-306;Pneu Speed 700x25c Kevlar Alta Pressão;MP;UN;98,00;35,00;70,00;111,00;ADEQUADO;10878,00
+MP-309;Fita de Guidão Speed Confort Gel Antiderrapante;MP;PAR;25,00;25,00;50,00;55,00;ADEQUADO;1375,00
+MP-311;Kit Transmissão Speed 2x11V Câmbios Integrados;MP;KIT;580,00;15,00;25,00;85,00;ADEQUADO;49300,00
+MP-317;Garfo Fibra de Carbono Rígido Speed Road;MP;UN;320,00;12,00;25,00;53,00;ADEQUADO;16960,00
+MP-401;Tubos Reforçados e Placa Berço Bateria E-Bike;MP;KG;60,00;30,00;60,00;167,60;ADEQUADO;10056,00
+MP-411;Motor Elétrico Central Brushless 250W 36V;MP;UN;850,00;10,00;20,00;60,00;ADEQUADO;51000,00
+MP-412;Bateria Íons de Lítio 36V 14Ah com Chave;MP;UN;920,00;10,00;20,00;49,00;ADEQUADO;45080,00
+MP-413;Display LCD Computador de Bordo e Sensor PAS;MP;KIT;140,00;15,00;30,00;21,00;ADEQUADO;2940,00
+PA-001;Bicicleta Mountain Bike Aro 29 Pedal Forte;PA;UN;0,00;15,00;20,00;28,00;ADEQUADO;0,00
+PA-002;Bicicleta Urbana Passeio Conforto Pedal Forte;PA;UN;0,00;12,00;15,00;20,00;ADEQUADO;0,00
+PA-003;Bicicleta Speed Road 700c Endurance Pedal Forte;PA;UN;0,00;10,00;12,00;14,00;ADEQUADO;0,00
+PA-004;Bicicleta Elétrica E-Bike Trekking 250W Pedal Forte;PA;UN;0,00;8,00;10,00;33,00;ADEQUADO;0,00
+SA-010;Quadro MTB Aro 29 Alumínio Soldado;SA;UN;0,00;20,00;25,00;45,00;ADEQUADO;0,00
+SA-011;Par de Rodas MTB 29 Montadas com Pneu;SA;JG;0,00;18,00;25,00;42,00;ADEQUADO;0,00
+SA-012;Cockpit MTB Completo Montado (Guidão e Mesa);SA;UN;0,00;15,00;20,00;50,00;ADEQUADO;0,00
+SA-020;Quadro Urbano Alumínio Rebaixado Soldado;SA;UN;0,00;15,00;20,00;20,00;ADEQUADO;0,00
+SA-021;Par de Rodas Urbanas 700c com Faixa Refletiva;SA;JG;0,00;15,00;20,00;22,00;ADEQUADO;0,00
+SA-022;Cockpit Urbano Conforto Regulável Montado;SA;UN;0,00;15,00;20,00;20,00;ADEQUADO;0,00
+SA-030;Quadro Speed Road 700c Alumínio Aero Soldado;SA;UN;0,00;12,00;15,00;16,00;ADEQUADO;0,00
+SA-031;Par de Rodas Speed 700c Perfil Alto Montadas;SA;JG;0,00;12,00;15,00;33,00;ADEQUADO;0,00
+SA-040;Quadro E-Bike com Berço Integrado de Bateria;SA;UN;0,00;10,00;15,00;4,00;ABAIXO DO SEGURANÇA;0,00
+SA-041;Módulo de Tração E-Bike (Motor Central e Chicote);SA;UN;0,00;10,00;15,00;32,00;ADEQUADO;0,00
