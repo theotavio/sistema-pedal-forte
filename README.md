@@ -7,6 +7,23 @@
 
 ---
 
+## Sumário
+
+* [Visão Geral do Sistema](#visão-geral-do-sistema)
+* [Requisitos Funcionais (RF)](#requisitos-funcionais-rf)
+* [Regras de Negócio (RN)](#regras-de-negócio-rn)
+* [Requisitos Não Funcionais (RNF)](#requisitos-não-funcionais-rnf)
+* [Decisões de Projeto](#decisões-de-projeto)
+* [Estrutura de Pastas do Projeto](#estrutura-de-pastas-do-projeto)
+* [Vídeos de Demonstração (GitHub Releases)](#vídeos-de-demonstração-github-releases)
+* [Instruções de Execução](#instruções-de-execução)
+  * [Pré-requisitos](#pré-requisitos)
+  * [Instalação das Dependências](#instalação-das-dependências)
+  * [Inicialização do Sistema](#inicialização-do-sistema)
+* [Instruções de Uso](#instruções-de-uso)
+
+---
+
 ## Visão Geral do Sistema
 
 O **Sistema Pedal Forte Bicicletas** é uma solução completa e moderna de **Planejamento dos Recursos de Manufatura (MRP II - *Manufacturing Resource Planning*)**, concebida especificamente para as particularidades produtivas de uma fábrica de bicicletas.
@@ -52,19 +69,57 @@ O sistema integra planejamento estratégico, tático e operacional:
 
 ## Regras de Negócio (RN)
 
-* **RN01:** O código do item é único e segue o formato `Tipo-Número` (ex: `PA-001`, `SA-020`, `MP-201`). Itens PA e SA são fabricados; itens MP são comprados e não possuem estrutura.
-* **RN02:** O saldo de estoque nunca pode ficar negativo: uma saída ou consumo maior que o saldo deve ser rejeitado com mensagem explicativa.
-* **RN03:** A estrutura tem no máximo 3 níveis: um PA pode ter como componentes SA e MP; um SA, apenas MP; MP não possui estrutura. O cadastro rejeita componentes que violem essa regra, o que também impede ciclos na BOM.
-* **RN04:** O MRP processa os itens por tipo: primeiro as PA, depois as SA e por fim as MP, de modo que a necessidade bruta de um componente seja a soma das liberações planejadas de todos os seus pais multiplicadas pela quantidade por unidade.
-* **RN05:** Necessidade líquida na semana $t$:
-  $$NL(t) = \max(0, NB(t) + ES - (EP(t - 1) + RP(t)))$$
-  em que $NB$ é a necessidade bruta, $ES$ o estoque de segurança, $EP$ o estoque projetado e $RP$ os recebimentos programados.
-* **RN06:** Quando houver necessidade líquida ($NL(t) > 0$), o recebimento planejado é o maior valor entre a necessidade líquida e o lote mínimo do item:
-  $$RecP(t) = \max(NL(t), \text{lote\_minimo})$$
-* **RN07:** A liberação planejada ocorre na semana do recebimento menos o lead time ($t_{lib} = t - LT$). Se cair antes da semana 1 ($t_{lib} < 1$), a ordem é marcada como `ATRASADA` e gera uma mensagem de exceção.
-* **RN08:** Apenas ordens `FIRME` ou `LIBERADA` entram como recebimentos programados ($RP$); ordens `PLANEJADA` e `ATRASADA` não firmadas são apagadas e recalculadas a cada execução do MRP.
-* **RN09:** Carga do centro na semana = soma de $(\text{quantidade da OP} \times \text{tempo unitário do roteiro})$ das OPs liberadas naquela semana; há sobrecarga quando a carga supera a capacidade nominal.
-* **RN10:** Toda movimentação de estoque deve ser registrada no histórico (kardex) com data e documento de origem e não pode ser excluída; correções são feitas por ajuste.
+* **RN01 (Código e Tipos de Itens):**
+  O código do item é único e segue obrigatoriamente o formato `Tipo-Número` (ex.: `PA-001`, `SA-020`, `MP-201`).
+  * `PA` (Produto Acabado) e `SA` (Semiacabado) são itens **fabricados** e possuem roteiro e/ou estrutura.
+  * `MP` (Matéria-Prima) é item **comprado** e não possui estrutura de componentes.
+
+* **RN02 (Invariância de Saldo Não-Negativo):**
+  O saldo em estoque nunca pode ficar negativo. Qualquer movimentação de saída ou consumo no apontamento de produção que supere o saldo disponível deve ser rejeitada com mensagem explicativa detalhada.
+
+* **RN03 (Estrutura BOM em até 3 Níveis):**
+  A lista de materiais (BOM) possui no máximo 3 níveis hierárquicos:
+  $$\text{PA} \longrightarrow \text{SA} \longrightarrow \text{MP}$$
+  * Um item `PA` pode ter como componentes `SA` e `MP`.
+  * Um item `SA` pode ter apenas `MP` como componente.
+  * Um item `MP` não pode possuir componentes.
+  * O cadastro rejeita qualquer relação que viole essa regra, impedindo ciclos ou autorreferências na BOM.
+
+* **RN04 (Sequenciamento Top-Down do MRP):**
+  O motor de cálculo do MRP processa os itens estritamente por tipo: primeiro os produtos acabados (`PA`), depois os semiacabados (`SA`) e por fim as matérias-primas (`MP`). Isso garante que a necessidade bruta ($NB$) de qualquer componente seja acumulada a partir da soma das liberações planejadas ($LibP$) de todos os itens pais que o utilizam multiplicadas pelo consumo unitário da BOM.
+
+* **RN05 (Necessidade Líquida no Horizonte de 8 Semanas):**
+  Para cada item e em cada semana $t \in [1, 8]$, a necessidade líquida ($NL$) é calculada por:
+  $$NL(t) = \max(0, \; NB(t) + ES - EP(t-1) - RP(t))$$
+  onde:
+  * $NB(t)$: Necessidade Bruta na semana $t$.
+  * $ES$: Estoque de Segurança cadastrado no item.
+  * $EP(t-1)$: Estoque Projetado da semana anterior (para a primeira semana $t=1$, $EP(0)$ corresponde ao saldo atual do item em estoque).
+  * $RP(t)$: Recebimentos Programados na semana $t$.
+
+* **RN06 (Loteamento Mínimo e Estoque Projetado):**
+  * Quando houver necessidade líquida ($NL(t) > 0$), o recebimento planejado ($RecP$) é calculado aplicando a política de lote mínimo:
+    * Se $NL(t) \le \text{lote\_minimo} \implies RecP(t) = \text{lote\_minimo}$
+    * Se $NL(t) > \text{lote\_minimo} \implies RecP(t) = NL(t)$
+  * Se $NL(t) = 0 \implies RecP(t) = 0$.
+  * O estoque projetado ao final de cada semana $t$ é calculado pela equação de balanço de massa:
+    $$EP(t) = EP(t-1) + RP(t) + RecP(t) - NB(t)$$
+
+* **RN07 (Liberação Planejada e Identificação de Ordens Atrasadas):**
+  A semana de liberação planejada de uma ordem com recebimento na semana $t$ ocorre na semana $t_{lib} = t - LT$, onde $LT$ é o *lead time* em semanas do item:
+  * Se $t_{lib} \ge 1$: a ordem planejada é gerada com semana de liberação $t_{lib}$ e semana de entrega $t$.
+  * Se $t_{lib} \le 0$: a ordem deveria ter sido liberada no passado para chegar na semana $t$. A ordem é então sinalizada com status `ATRASADA` e o MRP emite uma mensagem de exceção informativa para ação imediata do gestor.
+
+* **RN08 (Validade dos Recebimentos Programados):**
+  Apenas ordens com status `FIRME` ou `LIBERADA` entram como recebimentos programados ($RP$) no cálculo das semanas do MRP. Ordens com status `PLANEJADA` e `ATRASADA` não firmadas geradas em cálculos anteriores são descartadas e recalculadas a cada nova execução do MRP.
+
+* **RN09 (Carga de Capacidade do Centro de Trabalho - CRP):**
+  A carga de um centro de trabalho em cada semana $t$ é a soma ponderada de todas as ordens de produção (`OP`) com status `LIBERADA` ou `FIRME` cuja semana de produção/liberação seja a semana $t$:
+  $$\text{Carga}(t) = \sum (\text{Quantidade da OP} \times \text{Tempo Unitário do Roteiro})$$
+  Uma semana é classificada em situação de **sobrecarga** quando $\text{Carga}(t) > \text{Capacidade Nominal}$ (em horas/semana), disparando alerta visual vermelho no sistema.
+
+* **RN10 (Imutabilidade do Histórico do Kardex):**
+  Toda movimentação física de estoque (entrada, saída ou ajuste) é registrada de forma contábil e perpétua no Kardex com data, quantidade, saldo anterior, novo saldo e documento de origem. Registros do Kardex são imutáveis e jamais podem ser editados ou excluídos; eventuais divergências são corrigidas exclusivamente por meio de uma nova movimentação do tipo `AJUSTE`.
 
 ---
 
