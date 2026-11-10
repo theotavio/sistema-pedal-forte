@@ -79,44 +79,56 @@ O sistema integra planejamento estratégico, tático e operacional:
 
 * **RN03 (Estrutura BOM em até 3 Níveis):**
   A lista de materiais (BOM) possui no máximo 3 níveis hierárquicos:
-  $$\text{PA} \longrightarrow \text{SA} \longrightarrow \text{MP}$$
+  ```text
+  PA (Produto Acabado) -> SA (Semiacabado) -> MP (Matéria-Prima)
+  ```
   * Um item `PA` pode ter como componentes `SA` e `MP`.
   * Um item `SA` pode ter apenas `MP` como componente.
   * Um item `MP` não pode possuir componentes.
   * O cadastro rejeita qualquer relação que viole essa regra, impedindo ciclos ou autorreferências na BOM.
 
 * **RN04 (Sequenciamento Top-Down do MRP):**
-  O motor de cálculo do MRP processa os itens estritamente por tipo: primeiro os produtos acabados (`PA`), depois os semiacabados (`SA`) e por fim as matérias-primas (`MP`). Isso garante que a necessidade bruta ($NB$) de qualquer componente seja acumulada a partir da soma das liberações planejadas ($LibP$) de todos os itens pais que o utilizam multiplicadas pelo consumo unitário da BOM.
+  O motor de cálculo do MRP processa os itens estritamente por tipo: primeiro os produtos acabados (`PA`), depois os semiacabados (`SA`) e por fim as matérias-primas (`MP`). Isso garante que a necessidade bruta (`NB`) de qualquer componente seja calculada a partir da soma das liberações planejadas (`LibP`) de todos os itens pais que o utilizam multiplicadas pelo consumo unitário da BOM.
 
 * **RN05 (Necessidade Líquida no Horizonte de 8 Semanas):**
-  Para cada item e em cada semana $t \in [1, 8]$, a necessidade líquida ($NL$) é calculada por:
-  $$NL(t) = \max(0, \; NB(t) + ES - EP(t-1) - RP(t))$$
-  onde:
-  * $NB(t)$: Necessidade Bruta na semana $t$.
-  * $ES$: Estoque de Segurança cadastrado no item.
-  * $EP(t-1)$: Estoque Projetado da semana anterior (para a primeira semana $t=1$, $EP(0)$ corresponde ao saldo atual do item em estoque).
-  * $RP(t)$: Recebimentos Programados na semana $t$.
+  Para cada item e em cada semana `t` (de 1 a 8), a necessidade líquida (`NL`) é calculada por:
+  ```text
+  NL(t) = máx(0, NB(t) + ES - EP(t-1) - RP(t))
+  ```
+  Onde:
+  * `NB(t)`: Necessidade Bruta na semana `t`.
+  * `ES`: Estoque de Segurança cadastrado no item.
+  * `EP(t-1)`: Estoque Projetado da semana anterior (para a primeira semana `t = 1`, `EP(0)` corresponde ao saldo atual do item em estoque).
+  * `RP(t)`: Recebimentos Programados na semana `t`.
 
 * **RN06 (Loteamento Mínimo e Estoque Projetado):**
-  * Quando houver necessidade líquida ($NL(t) > 0$), o recebimento planejado ($RecP$) é calculado aplicando a política de lote mínimo:
-    * Se $NL(t) \le \text{lote\_minimo} \implies RecP(t) = \text{lote\_minimo}$
-    * Se $NL(t) > \text{lote\_minimo} \implies RecP(t) = NL(t)$
-  * Se $NL(t) = 0 \implies RecP(t) = 0$.
-  * O estoque projetado ao final de cada semana $t$ é calculado pela equação de balanço de massa:
-    $$EP(t) = EP(t-1) + RP(t) + RecP(t) - NB(t)$$
+  Quando houver necessidade líquida (`NL(t) > 0`), o recebimento planejado (`RecP`) é calculado aplicando a política de lote mínimo:
+  * Se `NL(t) <= lote_minimo`: `RecP(t) = lote_minimo`
+  * Se `NL(t) > lote_minimo`: `RecP(t) = NL(t)`
+  * Se `NL(t) == 0`: `RecP(t) = 0`
+
+  O estoque projetado ao final de cada semana `t` é calculado pela equação de balanço de massa:
+  ```text
+  EP(t) = EP(t-1) + RP(t) + RecP(t) - NB(t)
+  ```
 
 * **RN07 (Liberação Planejada e Identificação de Ordens Atrasadas):**
-  A semana de liberação planejada de uma ordem com recebimento na semana $t$ ocorre na semana $t_{lib} = t - LT$, onde $LT$ é o *lead time* em semanas do item:
-  * Se $t_{lib} \ge 1$: a ordem planejada é gerada com semana de liberação $t_{lib}$ e semana de entrega $t$.
-  * Se $t_{lib} \le 0$: a ordem deveria ter sido liberada no passado para chegar na semana $t$. A ordem é então sinalizada com status `ATRASADA` e o MRP emite uma mensagem de exceção informativa para ação imediata do gestor.
+  A semana de liberação planejada de uma ordem com recebimento na semana `t` ocorre na semana:
+  ```text
+  t_lib = t - Lead_Time
+  ```
+  * Se `t_lib >= 1`: a ordem planejada é gerada com semana de liberação `t_lib` e semana de entrega `t`.
+  * Se `t_lib <= 0`: a ordem deveria ter sido liberada no passado para chegar na semana `t`. A ordem é sinalizada com status `ATRASADA` e o MRP emite uma mensagem de exceção informativa para ação imediata do gestor.
 
 * **RN08 (Validade dos Recebimentos Programados):**
-  Apenas ordens com status `FIRME` ou `LIBERADA` entram como recebimentos programados ($RP$) no cálculo das semanas do MRP. Ordens com status `PLANEJADA` e `ATRASADA` não firmadas geradas em cálculos anteriores são descartadas e recalculadas a cada nova execução do MRP.
+  Apenas ordens com status `FIRME` ou `LIBERADA` entram como recebimentos programados (`RP`) no cálculo das semanas do MRP. Ordens com status `PLANEJADA` e `ATRASADA` não firmadas geradas em cálculos anteriores são descartadas e recalculadas a cada nova execução do MRP.
 
 * **RN09 (Carga de Capacidade do Centro de Trabalho - CRP):**
-  A carga de um centro de trabalho em cada semana $t$ é a soma ponderada de todas as ordens de produção (`OP`) com status `LIBERADA` ou `FIRME` cuja semana de produção/liberação seja a semana $t$:
-  $$\text{Carga}(t) = \sum (\text{Quantidade da OP} \times \text{Tempo Unitário do Roteiro})$$
-  Uma semana é classificada em situação de **sobrecarga** quando $\text{Carga}(t) > \text{Capacidade Nominal}$ (em horas/semana), disparando alerta visual vermelho no sistema.
+  A carga de um centro de trabalho em cada semana `t` é calculada pela soma:
+  ```text
+  Carga(t) = Σ (Quantidade da OP * Tempo Unitário do Roteiro)
+  ```
+  Considerando todas as ordens de produção (`OP`) com status `LIBERADA` ou `FIRME` cuja semana de produção/liberação seja `t`. Ocorre **sobrecarga** quando `Carga(t) > Capacidade Nominal` (em horas/semana), disparando alerta visual vermelho no sistema.
 
 * **RN10 (Imutabilidade do Histórico do Kardex):**
   Toda movimentação física de estoque (entrada, saída ou ajuste) é registrada de forma contábil e perpétua no Kardex com data, quantidade, saldo anterior, novo saldo e documento de origem. Registros do Kardex são imutáveis e jamais podem ser editados ou excluídos; eventuais divergências são corrigidas exclusivamente por meio de uma nova movimentação do tipo `AJUSTE`.
