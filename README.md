@@ -155,10 +155,10 @@ sistema-pedal-forte/
 ## Vídeos de Demonstração (GitHub Releases)
 
 Os vídeos completos de apresentação do sistema e auditoria do código fonte superam o limite de 100 MB por arquivo para armazenamento direto no Git:
-* **`demonstracao_codigo.mp4`** (~198 MB) — Apresentação técnica do código, modularização, regras de negócio e boas práticas PEP8.
-* **`demonstracao_sistema.mp4`** (~139 MB) — Demonstração funcional completa de todas as 12 telas e cálculos em tempo real.
+* [**`demonstracao_codigo.mp4`**](https://github.com/theotavio/sistema-pedal-forte/releases/download/v1.0.0/demonstracao_codigo.mp4) (~189 MB) — Apresentação técnica do código, modularização, regras de negócio e boas práticas PEP8.
+* [**`demonstracao_sistema.mp4`**](https://github.com/theotavio/sistema-pedal-forte/releases/download/v1.0.0/demonstracao_sistema.mp4) (~133 MB) — Demonstração funcional completa de todas as 12 telas e cálculos em tempo real.
 
-Os vídeos em alta definição estão disponíveis para download na seção de **[Releases do Repositório](https://github.com/theotavio/sistema-pedal-forte/releases)**.
+Os vídeos em alta definição estão publicados e disponíveis para download na seção de **[Releases v1.0.0](https://github.com/theotavio/sistema-pedal-forte/releases/tag/v1.0.0)**.
 
 ---
 
